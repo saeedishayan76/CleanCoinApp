@@ -3,4 +3,4 @@ this is an clean artutecture app that modular ny feature.
 this app shows coin prices and price changes in last 7 day in chart.
 in this app use Clean, MVi , Test, Convention Plugin , Compose and  .... 
 
-<img src="https://i.imghippo.com/files/QsCmd1724788495.png">
+[![temp-Imagenqb1j6.avif](https://i.postimg.cc/d01FZ9Cv/temp-Imagenqb1j6.avif)](https://postimg.cc/XrTmTdxD)
