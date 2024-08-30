@@ -8,15 +8,17 @@
 **CleanCoinApp**
 
 this is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
-**Features**
 
+**Features**
 Cryptocurrency price tracking
 Price change charts for visual analysis
 Modular architecture (feature-based)
 Clean and intuitive user interface built with Jetpack Compose
 ________________________________________________________________________________
+
 [![temp-Imagenqb1j6.avif](https://i.postimg.cc/d01FZ9Cv/temp-Imagenqb1j6.avif)](https://postimg.cc/XrTmTdxD)
 
+________________________________________________________________________________
 
 **Technologies Used**
 
