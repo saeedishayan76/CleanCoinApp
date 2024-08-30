@@ -1,21 +1,24 @@
 
-[![temp-Imagenqb1j6.avif](https://i.postimg.cc/d01FZ9Cv/temp-Imagenqb1j6.avif)](https://postimg.cc/XrTmTdxD)
-
-
-________________________________________________________________________________
 
 
 
-CleanCoinApp
-CleanCoinApp is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
-Features
+
+
+
+**CleanCoinApp**
+
+this is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
+**Features**
 
 Cryptocurrency price tracking
 Price change charts for visual analysis
 Modular architecture (feature-based)
 Clean and intuitive user interface built with Jetpack Compose
+________________________________________________________________________________
+[![temp-Imagenqb1j6.avif](https://i.postimg.cc/d01FZ9Cv/temp-Imagenqb1j6.avif)](https://postimg.cc/XrTmTdxD)
 
-Technologies Used
+
+**Technologies Used**
 
 Kotlin
 Jetpack Compose for UI
@@ -24,7 +27,7 @@ Modular architecture (feature-based)
 Hilt for dependency injection
 Convention plugins for build logic reuse
 
-Installation
+**Installation**
 
 Clone the repository:
 Copygit clone https://github.com/saeedishayan76/CleanCoinApp.git
@@ -33,7 +36,7 @@ Open the project in Android Studio
 Sync the project with Gradle files
 Run the app on an emulator or physical device
 
-Project Structure
+**Project Structure**
 The project follows a modular architecture, organized by features. This approach enhances scalability, maintainability, and allows for faster build times.
 Testing
 This project emphasizes testing to ensure reliability and maintainability:
