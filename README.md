@@ -10,10 +10,11 @@
 this is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
 
 <br>**Features**</br>
-Cryptocurrency price tracking
-Price change charts for visual analysis
-Modular architecture (feature-based)
-Clean and intuitive user interface built with Jetpack Compose
+
+<br>Cryptocurrency price tracking</br>
+<br>Price change charts for visual analysis</br>
+<br>Modular architecture (feature-based)</br>
+<br>Clean and intuitive user interface built with Jetpack Compose</br>
 ________________________________________________________________________________
 
 [![temp-Imagenqb1j6.avif](https://i.postimg.cc/d01FZ9Cv/temp-Imagenqb1j6.avif)](https://postimg.cc/XrTmTdxD)
@@ -22,30 +23,31 @@ ________________________________________________________________________________
 
 **Technologies Used**
 
-Kotlin
-Jetpack Compose for UI
-Unit testing with mockk
-Modular architecture (feature-based)
-Hilt for dependency injection
-Convention plugins for build logic reuse
+<br>Kotlin</br>
+<br>etpack Compose for UI</br>
+<br>Unit testing with mockk</br>
+<br>Modular architecture (feature-based)</br>
+<br>Hilt for dependency injection</br>
+<br>Convention plugins for build logic reuse</br>
 
-**Installation**
+<br>**Installation**</br>
 
-Clone the repository:
+<br>Clone the repository:</br>
 Copygit clone https://github.com/saeedishayan76/CleanCoinApp.git
 
 Open the project in Android Studio
 Sync the project with Gradle files
 Run the app on an emulator or physical device
 
-**Project Structure**
+<br>**Project Structure**</br>
 The project follows a modular architecture, organized by features. This approach enhances scalability, maintainability, and allows for faster build times.
-Testing
+
+<br>**Testing**</br>
 This project emphasizes testing to ensure reliability and maintainability:
 
-Unit tests for business logic like useCase, viewModel , repository and ...
+<br>Unit tests for business logic like useCase, viewModel , repository and ...</br>
 
- The picture below shows the connection between the modules
+ <br>The picture below shows the connection between the modules</br>
 
 [![temp-Imageh-LOdx-R.avif](https://i.postimg.cc/YqMwdQ0w/temp-Imageh-LOdx-R.avif)](https://postimg.cc/5j7G0Y8P)
 
