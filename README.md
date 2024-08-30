@@ -9,7 +9,7 @@
 
 this is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
 
-**Features**
+**Features**.
 Cryptocurrency price tracking
 Price change charts for visual analysis
 Modular architecture (feature-based)
