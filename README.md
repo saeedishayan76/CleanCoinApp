@@ -23,12 +23,13 @@ ________________________________________________________________________________
 
 **Technologies Used**
 
+<br>Convention plugins for build logic reuse</br>
 <br>Kotlin</br>
-<br>etpack Compose for UI</br>
-<br>Unit testing with mockk</br>
+<br>Jetpack Compose for UI</br>
+<br>Unit testing with fake and mockk</br>
 <br>Modular architecture (feature-based)</br>
 <br>Hilt for dependency injection</br>
-<br>Convention plugins for build logic reuse</br>
+
 
 <br>**Installation**</br>
 
