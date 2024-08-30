@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 **CleanCoinApp**
 
 this is a modern Android application that displays cryptocurrency prices and price change charts. It's built with a focus on clean architecture, modularity, and best practices in Android development.
@@ -52,11 +46,6 @@ This project emphasizes testing to ensure reliability and maintainability:
 
 [![temp-Imageh-LOdx-R.avif](https://i.postimg.cc/YqMwdQ0w/temp-Imageh-LOdx-R.avif)](https://postimg.cc/5j7G0Y8P)
 
-Run tests using Android Studio or via Gradle commands.
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-License
-[Insert your chosen license here]
-Contact
-[Your Name] - [Your Email]
-Project Link: https://github.com/saeedishayan76/CleanCoinApp
+<br>Run tests using Android Studio or via Gradle commands.</br>
+<br>Contributing</br>
+<br>Contributions are welcome! Please feel free to submit a Pull Request.</br>
