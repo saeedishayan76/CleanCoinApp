@@ -1,6 +1,5 @@
 package com.shayan.data.repository
 
-import android.util.Log
 import com.shayan.data.dto.ApiService
 import com.shayan.data.dto.toCoin
 import com.shayan.data.model.ChartModel
@@ -32,11 +31,11 @@ class CoinRepoImpl @Inject constructor(
 
     override fun getChartData(id: String): Flow<Result<List<ChartModel>>> = flow {
         try {
-            val reponse = apiService.getChart(id)
-            if (reponse.isSuccessful) {
-                reponse.body()?.let { body ->
+            val response = apiService.getChart(id)
+            if (response.isSuccessful) {
+                response.body()?.let { body ->
                     emit(Result.success(body.prices.mapIndexed { index, doubles ->
-                        ChartModel(index, doubles[1])
+                        ChartModel(index + 1, doubles[1])
                     }))
                 }
 

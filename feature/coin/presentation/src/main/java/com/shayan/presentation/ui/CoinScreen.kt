@@ -41,10 +41,8 @@ fun CoinScreenRoot(
     LaunchedEffect(key1 = Unit) {
         viewModel.initialize()
         viewModel.fetchChart("bitcoin", "BTC")
-
-        viewModel.effect.collect(){
-            Log.d("TAG", "Show ERROR: $it")
-            when(it){
+        viewModel.effect.collect() {
+            when (it) {
                 is CoinContract.CoinEffect.ShowError -> {
                     Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
                 }
@@ -52,7 +50,7 @@ fun CoinScreenRoot(
         }
     }
     val state = viewModel.viewState.collectAsState().value
-    CoinScreen(state = state){ id, symbol ->
+    CoinScreen(state = state) { id, symbol ->
         viewModel.setEvent(CoinContract.CoinIntent.CoinClicked(id, symbol))
     }
 }
@@ -72,7 +70,7 @@ fun CoinScreen(
                     .background(Color(0xff0A0F1B))
                     .padding(16.dp)
             ) {
-                if (state.isLoading){
+                if (state.isLoading) {
                     LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
                     Spacer(modifier = Modifier.height(16.dp))
                 }
@@ -103,7 +101,8 @@ fun CoinScreen(
                         .fillMaxWidth()
                 ) {
                     Spacer(modifier = Modifier.height(16.dp))
-                    ChartScreen(state.chartData)
+                    if (state.chartData.isNotEmpty())
+                        ChartScreen(state.chartData)
                 }
             }
         }
@@ -113,7 +112,7 @@ fun CoinScreen(
             contentPadding = it
         ) {
             itemsIndexed(state.coins) { index, asset ->
-                CoinItem(coin = asset){ id, symbol ->
+                CoinItem(coin = asset) { id, symbol ->
                     onCoinClick(id, symbol)
                 }
             }
@@ -126,5 +125,5 @@ fun CoinScreen(
 @Preview(showBackground = true)
 @Composable
 fun ShowPreviewContent() {
-    CoinScreen(state = CoinContract.CoinUiState()){ _, _ ->}
+    CoinScreen(state = CoinContract.CoinUiState()) { _, _ -> }
 }

@@ -12,6 +12,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.zip
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -21,8 +22,6 @@ class CoinViewModel @Inject constructor(
     private val getChartUseCase: GetChartUseCase
 ) : BaseViewModel<CoinContract.CoinIntent, CoinContract.CoinUiState, CoinContract.CoinEffect>() {
 
-   private val channel = Channel<Int>()
-    val ch = channel.receiveAsFlow()
     fun initialize() {
         getCoinUseCase().onEach {
             it.onFailure {
@@ -52,9 +51,6 @@ class CoinViewModel @Inject constructor(
                     copy(
                         errorMsg = it.message ?: "Something went wrong"
                     )
-                }
-                viewModelScope.launch {
-                    channel.send(2)
                 }
                 setEffect {
                     CoinContract.CoinEffect.ShowError(it.message ?: "Something went wrong")
